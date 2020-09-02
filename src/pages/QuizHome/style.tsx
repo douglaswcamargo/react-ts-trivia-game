@@ -1,15 +1,13 @@
 import styled from 'styled-components'
 
-export const Title = styled.h1`
+export const TextWithPadding = styled.p`
     color: ${(props) => props.theme.colors.text};
-    margin-bottom: 50px;
+    font-size: 1.4rem;
+    padding-bottom: 38px;
 `
-export const Description = styled.h2`
-    color: ${(props) => props.theme.colors.text};
-    margin-bottom: 50px;
-`
-export const Challenge = styled.div`
-    color: ${(props) => props.theme.colors.text};
-    font-size: 1rem;
-    margin-bottom: 50px;
+export const Wrapper = styled.div`
+    height: 446px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 `
