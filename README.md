@@ -14,7 +14,7 @@ It uses `i18n` for localization management -- there is an example toggle at the 
 
 I've done some basic testing on the components, but there's room for more...
 
-#####Setup
+##### Setup
 
 In order to run this project locally, just `npm install` (or `yarn`) and `npm start`
 
