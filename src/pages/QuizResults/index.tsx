@@ -12,7 +12,7 @@ import { AppState } from '../../store/types'
 export default function QuizResults () {
   const { t } = useTranslation()
   const answers = useSelector((state: AppState) => state.answers.data)
-  const correctAnswers = answers.filter((answer) => !answer.correct)
+  const correctAnswers = answers.filter((answer) => answer.correct)
 
   return (
     <QuizContainer>
