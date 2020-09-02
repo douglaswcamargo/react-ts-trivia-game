@@ -1,8 +1,9 @@
 import React from 'react'
+import Text from './Text'
 
 function App () {
   return (
-    <div>hello</div>
+    <Text>hello</Text>
   )
 }
 
