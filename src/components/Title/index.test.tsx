@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Text from './index'
+import Title from './index'
 import { ThemeProvider } from 'styled-components'
 import { light } from '../../config/themes'
 import GlobalStyles from '../../config/GlobalStyle'
@@ -10,9 +10,9 @@ it('renders without crashing', () => {
     <ThemeProvider theme={light}>
       <>
         <GlobalStyles/>
-        <Text>
+        <Title>
           sample text here
-        </Text>
+        </Title>
       </>
     </ThemeProvider>
   )
