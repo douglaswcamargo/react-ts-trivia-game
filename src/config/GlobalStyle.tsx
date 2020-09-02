@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { CustomTheme } from '../config/types'
+import { CustomTheme } from './types'
 
 interface Props {
   theme: CustomTheme
@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle<Props>`
     align-items: center;
     font-family: ${(props) => props.theme.fonts.primary};
     justify-content: center;
+    text-align: center;
   }
 `
 
