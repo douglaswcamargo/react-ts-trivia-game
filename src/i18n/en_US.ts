@@ -1,11 +1,17 @@
 export default {
   general: {
-    loading: 'Loading...'
+    loading: 'Loading...',
+    notFound: 'Page not found.'
   },
-  triviaGame: {
+  quiz: {
     homeTitle: 'Welcome to the Trivia Challenge',
     homeDescription: 'You will be presented with 10 True or False questions',
     homeChallenge: 'Can you score 100%?',
-    homeButtonStart: 'Begin'
+    homeButtonStart: 'Begin',
+    quizButtonTrue: 'True',
+    quizButtonFalse: 'False',
+    quizCounterPreposition: 'of',
+    resultsTitle: 'You scored',
+    resultsButtonRetry: 'Play Again'
   }
 }
