@@ -1,13 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { setLocalStorageItem } from '../helpers'
+import { useTranslation } from 'react-i18next'
 
-export default function useToggleTheme (initialTheme: string) {
-  const [selectedTheme, setSelectedTheme] = useState(initialTheme)
-  const toggleTheme = () => setSelectedTheme(selectedTheme === 'light' ? 'dark' : 'light')
+export default function useToggleLanguage (initialLanguage: string) {
+  const [language, setLanguage] = useState(initialLanguage)
+  const { i18n } = useTranslation()
 
-  useEffect(() => {
-    setLocalStorageItem('quizTheme', selectedTheme)
-  }, [selectedTheme])
+  const toggleLanguage = async (isPt: boolean) => {
+    const selectedLang = isPt ? 'pt_BR' : 'en_US'
+    await i18n.changeLanguage(selectedLang)
+    setLanguage(selectedLang)
+  }
 
-  return [selectedTheme, toggleTheme] as const
+  useEffect(() => setLocalStorageItem('quizLanguage', language), [language])
+
+  return [language, toggleLanguage] as const
 }
