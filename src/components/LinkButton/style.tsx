@@ -1,7 +1,8 @@
 import styled from 'styled-components'
-import {Link, LinkProps} from 'react-router-dom'
+import { Link, LinkProps } from 'react-router-dom'
 
-export const Container = styled(Link<LinkProps>)`
+export const Container = styled(Link)<LinkProps>`
+    text-decoration: none;
   display: block;
   padding: 15px;
   font-family: ${(props) => props.theme.fonts.primary};
