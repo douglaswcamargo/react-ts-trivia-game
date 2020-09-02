@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import { useHistory } from 'react-router-dom'
 import { fetchQuestions } from '../../store/ducks/questions/actions'
-import { answerQuestion } from '../../store/ducks/answers/actions'
+import { answerQuestion, resetResults } from '../../store/ducks/answers/actions'
 import { AppState } from '../../store/types'
 import Button from '../../components/Button'
 import ButtonGroup from '../../components/ButtonGroup'
@@ -35,7 +35,8 @@ export default function QuizQuestionContainer () {
 
   useEffect(() => {
     dispatch(fetchQuestions())
-  }, [])
+    dispatch(resetResults())
+  }, [dispatch])
 
   if (questions.loading) {
     return <Spinner />
@@ -50,8 +51,8 @@ export default function QuizQuestionContainer () {
         question={questions.data[currentQuestion].question}
       />
       <ButtonGroup>
-        <Button title={t('quiz.quizButtonFalse')} onClick={() => handleAnswer('True')} />
-        <Button title={t('quiz.quizButtonTrue')} onClick={() => handleAnswer('False')} />
+        <Button title={t('quiz.quizButtonFalse')} onClick={() => handleAnswer('False')} />
+        <Button title={t('quiz.quizButtonTrue')} onClick={() => handleAnswer('True')} />
       </ButtonGroup>
     </>
   )
