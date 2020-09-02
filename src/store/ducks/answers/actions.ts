@@ -1,10 +1,10 @@
 import { action } from 'typesafe-actions'
-import { Answer, QuizTypes } from './types'
+import { Answer, AnswersTypes } from './types'
 
-export const answerQuestion = (data: Answer) => {
-  return action(QuizTypes.ANSWER_QUESTION, { data })
+export const answerQuestion = (answer: Answer) => {
+  return action(AnswersTypes.ANSWER_QUESTION, answer)
 }
 
 export const resetResults = () => {
-  return action(QuizTypes.RESET_RESULTS)
+  return action(AnswersTypes.RESET_ANSWERS)
 }

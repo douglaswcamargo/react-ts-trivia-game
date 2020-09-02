@@ -1,6 +1,6 @@
-export enum QuizTypes {
-  RESET_RESULTS = '@questions/FETCH_QUESTIONS',
-  ANSWER_QUESTION = '@questions/FETCH_QUESTIONS_SUCCESS'
+export enum AnswersTypes {
+  RESET_ANSWERS = '@answers/RESET_ANSWERS',
+  ANSWER_QUESTION = '@answers/ANSWER_QUESTION'
 }
 
 export interface Answer {
@@ -8,6 +8,6 @@ export interface Answer {
   correct: boolean
 }
 
-export interface QuizState {
-  readonly results: Answer[]
+export interface AnswersState {
+  readonly data: Answer[]
 }

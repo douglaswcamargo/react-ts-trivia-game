@@ -1,18 +1,18 @@
 import { Reducer } from 'redux'
-import { QuizState, QuizTypes } from './types'
+import { AnswersTypes, AnswersState } from './types'
 
-const INITIAL_STATE: QuizState = {
-  results: []
+const INITIAL_STATE: AnswersState = {
+  data: []
 }
 
 // eslint-disable-next-line @typescript-eslint/default-param-last
-const reducer: Reducer<QuizState> = (state = INITIAL_STATE, action) => {
+const reducer: Reducer<AnswersState> = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case QuizTypes.RESET_RESULTS:
+    case AnswersTypes.RESET_ANSWERS:
       return {
         data: []
       }
-    case QuizTypes.ANSWER_QUESTION:
+    case AnswersTypes.ANSWER_QUESTION:
       return {
         data: [...state.data, action.payload]
       }
