@@ -5,7 +5,7 @@ const spinner = keyframes`
     100% { transform: rotate(360deg); }
 `
 
-export const StyledDiv = styled.div`
+export const Spinner = styled.div`
   width: 2.5rem;
   height: 2.5rem;
   border-top-color: ${(props) => props.theme.colors.primary};
@@ -19,4 +19,7 @@ export const StyledDiv = styled.div`
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
+  margin: auto;
 `
+
+export default Spinner
