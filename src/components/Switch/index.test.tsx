@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import Switch from './index'
 import { light } from '../../config/themes'
-import GlobalStyles from '../GlobalStyle'
+import GlobalStyles from '../../config/GlobalStyle'
 import { ThemeProvider } from 'styled-components'
 
 it('renders without crashing', () => {
@@ -12,8 +12,8 @@ it('renders without crashing', () => {
         <GlobalStyles/>
         <Switch
           value={true}
-          labelLeft={'EN'}
-          labelRight={'PT'}
+          labelLeft={'left'}
+          labelRight={'right'}
           disabled={false}
           switched
           onChange={(value) => null}

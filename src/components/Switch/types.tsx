@@ -11,5 +11,5 @@ export interface SwitchProps {
   labelLeftProps?: object
   labelRightProps?: object
   disabled: boolean
-  switched: boolean
+  switched?: boolean
 }
