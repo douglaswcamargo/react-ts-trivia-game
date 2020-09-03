@@ -2,7 +2,7 @@ import React from 'react'
 import { ButtonProps } from './types'
 import * as S from './style'
 
-export default function Button (props: ButtonProps) {
+const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const {
     title,
     disabled,
@@ -19,3 +19,5 @@ export default function Button (props: ButtonProps) {
     </S.Container>
   )
 }
+
+export default Button

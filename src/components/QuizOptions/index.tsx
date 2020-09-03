@@ -1,9 +1,10 @@
 import React from 'react'
 import Switch from '../Switch'
-import * as S from './style'
 import { QuizOptionsProps } from './types'
+import Group from '../Group'
+import * as S from './style'
 
-export default function QuizOptions (props: QuizOptionsProps) {
+const QuizOptions: React.FC<QuizOptionsProps> = (props: QuizOptionsProps) => {
   const {
     theme,
     language,
@@ -13,20 +14,24 @@ export default function QuizOptions (props: QuizOptionsProps) {
 
   return (
     <S.Container>
-      <Switch
-        value={language === 'pt_BR'}
-        labelLeft={'EN'}
-        labelRight={'PT'}
-        disabled={false}
-        onChange={(value) => onChangeLanguage(value)}
-      />
-      <Switch
-        value={theme === 'dark'}
-        labelLeft={'Light'}
-        labelRight={'Dark'}
-        disabled={false}
-        onChange={(value) => onChangeTheme(value)}
-      />
+      <Group vertical alignItems="center">
+        <Switch
+          value={language === 'pt_BR'}
+          labelLeft={'EN'}
+          labelRight={'PT'}
+          disabled={false}
+          onChange={(value) => onChangeLanguage(value)}
+        />
+        <Switch
+          value={theme === 'dark'}
+          labelLeft={'Light'}
+          labelRight={'Dark'}
+          disabled={false}
+          onChange={(value) => onChangeTheme(value)}
+        />
+      </Group>
     </S.Container>
   )
 }
+
+export default QuizOptions

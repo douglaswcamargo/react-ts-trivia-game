@@ -3,7 +3,7 @@ import Text from '../Text'
 import { SwitchProps } from './types'
 import * as S from './style'
 
-export default function Switch (props: SwitchProps) {
+const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
   const {
     value,
     onChange,
@@ -34,3 +34,5 @@ export default function Switch (props: SwitchProps) {
     </div>
   )
 }
+
+export default Switch

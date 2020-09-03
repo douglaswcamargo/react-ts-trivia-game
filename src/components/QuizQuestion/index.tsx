@@ -5,7 +5,7 @@ import Text from '../Text'
 import { useTranslation } from 'react-i18next'
 import { QuizQuestionProps } from './types'
 
-export default function QuizQuestion (props: QuizQuestionProps) {
+const QuizQuestion: React.FC<QuizQuestionProps> = (props: QuizQuestionProps) => {
   const { question, currentQuestion, totalQuestions } = props
   const { t } = useTranslation()
 
@@ -20,3 +20,5 @@ export default function QuizQuestion (props: QuizQuestionProps) {
     </>
   )
 }
+
+export default QuizQuestion

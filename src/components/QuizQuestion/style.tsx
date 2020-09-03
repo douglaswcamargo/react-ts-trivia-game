@@ -18,4 +18,5 @@ export const Question = styled.p`
 
 export const Counter = styled.div`
     padding: 30px;
+    font-size: 1.5rem;
 `

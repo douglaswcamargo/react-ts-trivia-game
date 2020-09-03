@@ -6,11 +6,11 @@ import { fetchQuestions } from '../../store/ducks/questions/actions'
 import { answerQuestion, resetResults } from '../../store/ducks/answers/actions'
 import { AppState } from '../../store/types'
 import Button from '../../components/Button'
-import ButtonGroup from '../../components/ButtonGroup'
 import QuizQuestion from '../../components/QuizQuestion'
 import Spinner from '../../components/Spinner'
 import { Answer } from '../../store/ducks/answers/types'
 import Title from '../../components/Title'
+import Group from '../../components/Group'
 
 export default function QuizQuestionContainer () {
   const questions = useSelector((state: AppState) => state.questions)
@@ -50,10 +50,10 @@ export default function QuizQuestionContainer () {
         currentQuestion={currentQuestion + 1}
         question={questions.data[currentQuestion].question}
       />
-      <ButtonGroup>
+      <Group>
         <Button title={t('quiz.quizButtonFalse')} onClick={() => handleAnswer('False')} />
         <Button title={t('quiz.quizButtonTrue')} onClick={() => handleAnswer('True')} />
-      </ButtonGroup>
+      </Group>
     </>
   )
 }

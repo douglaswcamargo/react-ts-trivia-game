@@ -12,6 +12,7 @@ export const Container = styled.button`
   border: 2pt solid ${(props) => props.theme.colors.primary};
   border-radius: 4px;
   cursor: pointer;
+  min-width: 153px;
   &[disabled] {
     cursor: not-allowed;
     opacity: 0.7;
