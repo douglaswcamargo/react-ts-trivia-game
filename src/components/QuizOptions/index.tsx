@@ -1,6 +1,7 @@
 import React from 'react'
 import Switch from '../Switch'
 import { QuizOptionsProps } from './types'
+import { FaSun, FaMoon } from 'react-icons/fa'
 import Group from '../Group'
 import * as S from './style'
 
@@ -24,8 +25,8 @@ const QuizOptions: React.FC<QuizOptionsProps> = (props: QuizOptionsProps) => {
         />
         <Switch
           value={theme === 'dark'}
-          labelLeft={'Light'}
-          labelRight={'Dark'}
+          labelLeft={<FaSun />}
+          labelRight={<FaMoon />}
           disabled={false}
           onChange={(value) => onChangeTheme(value)}
         />
