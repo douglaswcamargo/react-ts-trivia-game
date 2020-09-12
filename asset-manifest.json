@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/react-ts-trivia-game/static/js/main.598b887f.chunk.js",
-    "main.js.map": "/react-ts-trivia-game/static/js/main.598b887f.chunk.js.map",
+    "main.js": "/react-ts-trivia-game/static/js/main.60c5506e.chunk.js",
+    "main.js.map": "/react-ts-trivia-game/static/js/main.60c5506e.chunk.js.map",
     "runtime-main.js": "/react-ts-trivia-game/static/js/runtime-main.48e1660b.js",
     "runtime-main.js.map": "/react-ts-trivia-game/static/js/runtime-main.48e1660b.js.map",
     "static/js/2.4dca03d0.chunk.js": "/react-ts-trivia-game/static/js/2.4dca03d0.chunk.js",
     "static/js/2.4dca03d0.chunk.js.map": "/react-ts-trivia-game/static/js/2.4dca03d0.chunk.js.map",
     "index.html": "/react-ts-trivia-game/index.html",
-    "precache-manifest.ef66cd56cc5aa7981b3398be28d1aacc.js": "/react-ts-trivia-game/precache-manifest.ef66cd56cc5aa7981b3398be28d1aacc.js",
+    "precache-manifest.e4731b1fac7afe9190e9b394c02285c5.js": "/react-ts-trivia-game/precache-manifest.e4731b1fac7afe9190e9b394c02285c5.js",
     "service-worker.js": "/react-ts-trivia-game/service-worker.js",
     "static/js/2.4dca03d0.chunk.js.LICENSE.txt": "/react-ts-trivia-game/static/js/2.4dca03d0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.48e1660b.js",
     "static/js/2.4dca03d0.chunk.js",
-    "static/js/main.598b887f.chunk.js"
+    "static/js/main.60c5506e.chunk.js"
   ]
 }
