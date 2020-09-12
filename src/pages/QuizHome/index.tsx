@@ -1,21 +1,33 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import QuizContainer from '../../containers/QuizContainer'
-import * as S from './style'
-import LinkButton from '../../components/LinkButton'
 import Title from '../../components/Title'
+// import * as S from './style'
+import { useHistory } from 'react-router-dom'
+import Hint from '../../components/Hint'
+import Text from '../../components/Text'
 
 export default function QuizHome () {
   const { t } = useTranslation()
+  const history = useHistory()
+  const handleClickA = () => {
+    history.push(`${process.env.PUBLIC_URL}/quiz`)
+  }
+
+  const handleClickB = () => {
+    history.push(`${process.env.PUBLIC_URL}/quiz`)
+  }
 
   return (
-    <QuizContainer>
-      <S.Wrapper>
-        <Title>{t('quiz.homeTitle')}</Title>
-        <S.TextWithPadding>{t('quiz.homeDescription')}</S.TextWithPadding>
-        <S.TextWithPadding>{t('quiz.homeChallenge')}</S.TextWithPadding>
-      </S.Wrapper>
-      <LinkButton to={`${process.env.PUBLIC_URL}/quiz`}>{t('quiz.homeButtonStart')}</LinkButton>
+    <QuizContainer
+      onClickA={handleClickA}
+      onClickB={handleClickB}
+    >
+      <Title>{t('quiz.homeTitle')}</Title>
+      <Text>{t('quiz.homeSubTitle')}</Text>
+      <Text>{t('quiz.homeDescription')}</Text>
+      <Text>{t('quiz.homeChallenge')}</Text>
+      <Hint blink>{t('quiz.homeButtonStart')}</Hint>
     </QuizContainer>
   )
 }
