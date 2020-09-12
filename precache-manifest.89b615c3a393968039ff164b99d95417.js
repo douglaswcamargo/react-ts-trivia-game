@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "225f611c72b6836ea93ef85b677c532b",
+    "revision": "c869e3ab4038e5fa041e3debc20a810f",
     "url": "/react-ts-trivia-game/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-ts-trivia-game/static/js/2.4dca03d0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fcde901107528acdf01a",
-    "url": "/react-ts-trivia-game/static/js/main.e3e86687.chunk.js"
+    "revision": "64976468d02a6aa987a7",
+    "url": "/react-ts-trivia-game/static/js/main.ca2f80f7.chunk.js"
   },
   {
     "revision": "5c1101fbc7d58801d699",
