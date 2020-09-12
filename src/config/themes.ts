@@ -1,32 +1,43 @@
 const light = {
   colors: {
     primary: '#44a9ff',
-    success: '#2ac498',
-    error: '#f33236',
+    success: '#306230',
+    error: '#7a1c4b',
     text: '#2d3956',
-    control: '#C0D0E6',
-    icon: '#7F8B97',
-    bodyBackground: '#fafafa',
-    sectionBackground: '#e0e0e0'
+    bodyBackground: '#f0f0f0',
+    sectionBackground: '#e0e0e0',
+    handheldScreen: '#bdae58',
+    handheldBackground: '#cec9cc',
+    handheldBackgroundSecondary: '#908a99',
+    handheldText: '#211a21',
+    handheldPrimary: '#b5b6e4',
+    handheldSecondary: '#4f43ae',
+    handheldSecondaryShadow: '#352d75'
   },
   fonts: {
-    primary: '\'Helvetica Now\', Helvetica, Arial, sans-serif'
+    primary: '\'Helvetica Now\', Helvetica, Arial, sans-serif',
+    secondary: '\'Press Start 2P\', cursive'
   }
 }
 
 const dark = {
   colors: {
-    primary: 'rgba(68, 169, 255, .7)',
-    success: '#2ac498',
-    error: '#f33236',
-    text: '#fafafa',
-    control: '#C0D0E6',
-    icon: '#7F8B97',
-    bodyBackground: '#363537',
-    sectionBackground: '#1c1b1b'
+    primary: '#00b9be',
+    success: '#a1ef8c',
+    error: '#ab4646',
+    text: '#e2f3e4',
+    bodyBackground: '#161616',
+    handheldScreen: '#332c50',
+    handheldBackground: '#cec9cc',
+    handheldBackgroundSecondary: '#908a99',
+    handheldText: '#e2f3e4',
+    handheldPrimary: '#b5b6e4',
+    handheldSecondary: '#4f43ae',
+    handheldSecondaryShadow: '#352d75'
   },
   fonts: {
-    primary: '\'Helvetica Now\', Helvetica, Arial, sans-serif'
+    primary: '\'Helvetica Now\', Helvetica, Arial, sans-serif',
+    secondary: '\'Press Start 2P\', cursive'
   }
 }
 

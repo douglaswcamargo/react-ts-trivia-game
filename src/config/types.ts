@@ -8,8 +8,16 @@ export interface CustomTheme {
     icon: string
     bodyBackground: string
     sectionBackground: string
+    handheldScreen: string
+    handheldBackground: string
+    handheldBackgroundSecondary: string
+    handheldText: string
+    handheldPrimary: string
+    handheldSecondary: string
+    handheldSecondaryShadow: string
   }
   fonts: {
     primary: string
+    secondary: string
   }
 }
