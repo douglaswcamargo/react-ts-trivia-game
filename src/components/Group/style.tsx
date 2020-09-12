@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components'
+import styled, { css } from 'styled-components'
 import { GroupProps } from './types'
 
 export const Container = styled.div<GroupProps>`

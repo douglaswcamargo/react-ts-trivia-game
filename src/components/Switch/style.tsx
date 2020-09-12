@@ -15,28 +15,29 @@ export const Container = styled.button.attrs({
 export const Switcher = styled.div<SwitcherProps>`
   width: 40px;
   height: 21px;
-  background-color: ${(props) => props.theme.colors.control};
+  background-color: rgba(0,0,0,0.08);
+  box-shadow: inset 2px 2px rgba(0,0,0,0.3);
   border-radius: 100px;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
   position: relative;
   flex-shrink: 0;
 
   &::after {
     content: " ";
     position: absolute;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
-    background-color: #fff;
-    border: 1px solid ${(props) => props.theme.colors.control};
-    left: 2px;
-    top: 2px;
+    background-color: ${(props) => props.theme.colors.handheldPrimary};
+    box-shadow: 0px 1px 0px ${(props) => props.theme.colors.handheldSecondary};
+    left: 0px;
+    top: 0px;
     box-sizing: border-box;
     transition: all 0.2s ease;
     ${(props) => props.switched && css`
       border-color: transparent;
-      left: ${40 - 18 - 2}px;
+      left: ${40 - 20}px;
     `}
   }
 }`

@@ -1,5 +1,4 @@
 import React from 'react'
-import Text from '../Text'
 import { SwitchProps } from './types'
 import * as S from './style'
 
@@ -9,8 +8,6 @@ const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
     onChange,
     labelLeft,
     labelRight,
-    labelLeftProps,
-    labelRightProps,
     disabled
   } = props
 
@@ -24,12 +21,12 @@ const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
           }
         }}
       >
-        {labelLeft && <Text as='span' {...labelLeftProps}>{labelLeft} </Text>}
+        {labelLeft && <span>{labelLeft} </span>}
         <S.Switcher
           switched={value}
           disabled={disabled}
         />
-        {labelRight && <Text as='span' {...labelRightProps}> {labelRight}</Text>}
+        {labelRight && <span> {labelRight}</span>}
       </S.Container>
     </div>
   )

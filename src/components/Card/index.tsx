@@ -7,9 +7,9 @@ const Card = styled.div`
     height: 100%;
     min-height: 560px;
     width: 360px;
-    background-color: ${(props) => props.theme.colors.sectionBackground};
-    box-shadow: 0 1px 3px 0 rgba(153, 169, 190, 0.3);
-    border-radius: 4px;
+    background-color: ${(props) => props.theme.colors.handheldBackground};
+    box-shadow: 5px 5px ${(props) => props.theme.colors.handheldBackgroundSecondary};
+    border-radius: 10px 10px 60px 10px;
 `
 
 export default Card
