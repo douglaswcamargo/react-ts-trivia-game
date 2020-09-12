@@ -8,11 +8,16 @@ import Title from '../../components/Title'
 import Text from '../../components/Text'
 import { useSelector } from 'react-redux'
 import { AppState } from '../../store/types'
+import { Redirect } from 'react-router-dom'
 
 export default function QuizResults () {
   const { t } = useTranslation()
   const answers = useSelector((state: AppState) => state.answers.data)
   const correctAnswers = answers.filter((answer) => answer.correct)
+
+  if (answers.length === 0) {
+    return <Redirect push to={`${process.env.PUBLIC_URL}/`} />
+  }
 
   return (
     <QuizContainer>
