@@ -29,7 +29,7 @@ export default function QuizQuestionContainer () {
     if (currentQuestion + 1 < questions.data.length) {
       setCurrentQuestion(currentQuestion + 1)
     } else {
-      history.push('/results')
+      history.push(`${process.env.PUBLIC_URL}/results`)
     }
   }
 

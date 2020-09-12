@@ -8,9 +8,9 @@ import NotFound from '../pages/NotFound'
 export default function Routes () {
   return (
     <Switch>
-      <Route exact path='/' component={QuizHome} />
-      <Route path='/quiz' component={QuizQuestions} />
-      <Route path='/results' component={QuizResults} />
+      <Route exact path={`${process.env.PUBLIC_URL}/`} component={QuizHome} />
+      <Route path={`${process.env.PUBLIC_URL}/quiz`} component={QuizQuestions} />
+      <Route path={`${process.env.PUBLIC_URL}/results`} component={QuizResults} />
       <Route component={NotFound} />
     </Switch>
   )

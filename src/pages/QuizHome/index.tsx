@@ -15,7 +15,7 @@ export default function QuizHome () {
         <S.TextWithPadding>{t('quiz.homeDescription')}</S.TextWithPadding>
         <S.TextWithPadding>{t('quiz.homeChallenge')}</S.TextWithPadding>
       </S.Wrapper>
-      <LinkButton to="/quiz">{t('quiz.homeButtonStart')}</LinkButton>
+      <LinkButton to={`${process.env.PUBLIC_URL}/quiz`}>{t('quiz.homeButtonStart')}</LinkButton>
     </QuizContainer>
   )
 }

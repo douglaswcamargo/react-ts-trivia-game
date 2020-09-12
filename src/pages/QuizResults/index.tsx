@@ -30,7 +30,7 @@ export default function QuizResults () {
           })}
         </S.List>
       </S.Wrapper>
-      <LinkButton to="/">{t('quiz.resultsButtonRetry')}</LinkButton>
+      <LinkButton to={ `${process.env.PUBLIC_URL}/` }>{t('quiz.resultsButtonRetry')}</LinkButton>
     </QuizContainer>
   )
 }
