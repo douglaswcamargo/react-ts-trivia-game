@@ -12,7 +12,9 @@ const light = {
     handheldText: '#211a21',
     handheldPrimary: '#b5b6e4',
     handheldSecondary: '#4f43ae',
-    handheldSecondaryShadow: '#352d75'
+    handheldSecondaryShadow: '#352d75',
+    handheldButton: '#8e1e50',
+    handheldButtonShadow: '#6e173e'
   },
   fonts: {
     primary: '\'Helvetica Now\', Helvetica, Arial, sans-serif',
@@ -22,18 +24,20 @@ const light = {
 
 const dark = {
   colors: {
-    primary: '#00b9be',
+    primary: '#44a9ff',
     success: '#a1ef8c',
     error: '#ab4646',
     text: '#e2f3e4',
     bodyBackground: '#161616',
     handheldScreen: '#332c50',
-    handheldBackground: '#cec9cc',
-    handheldBackgroundSecondary: '#908a99',
+    handheldBackground: '#3b3639',
+    handheldBackgroundSecondary: '#312c2f',
     handheldText: '#e2f3e4',
-    handheldPrimary: '#b5b6e4',
-    handheldSecondary: '#4f43ae',
-    handheldSecondaryShadow: '#352d75'
+    handheldPrimary: '#cf2c74',
+    handheldSecondary: '#8e1e50',
+    handheldSecondaryShadow: '#6e173e',
+    handheldButton: '#4f43ae',
+    handheldButtonShadow: '#352d75'
   },
   fonts: {
     primary: '\'Helvetica Now\', Helvetica, Arial, sans-serif',

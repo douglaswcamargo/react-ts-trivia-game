@@ -15,6 +15,8 @@ export interface CustomTheme {
     handheldPrimary: string
     handheldSecondary: string
     handheldSecondaryShadow: string
+    handheldButton: string
+    handheldButtonShadow: string
   }
   fonts: {
     primary: string
