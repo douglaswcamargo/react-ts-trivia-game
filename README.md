@@ -1,6 +1,6 @@
 #### Overview
 
-Check out the [online demo](https://douglaswcamargo.github.io/react-ts-trivia-game/)
+Check out the **[online demo](https://douglaswcamargo.github.io/react-ts-trivia-game/)**
 
 This project was developed using:
 - `React`/`Typescript`

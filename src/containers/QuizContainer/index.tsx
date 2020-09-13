@@ -7,9 +7,8 @@ import useToggleLanguage from '../../hooks/useToggleLanguage'
 import HandheldButtonGroup from '../../components/HandheldButtonGroup'
 import { HandheldScreen } from '../../components/HandheldScreen'
 
-const initialLanguage = getLocalStorageItem('quizLanguage') ?? 'en_US'
-
 export default function QuizContainer ({ children, onClickA, onClickB }: QuizContainerProps) {
+  const initialLanguage = getLocalStorageItem('quizLanguage') ?? 'en_US'
   const [language, toggleLanguage] = useToggleLanguage(initialLanguage)
   const { selectedTheme, setSelectedTheme } = useContext(AppThemeContext)
 
