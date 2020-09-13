@@ -10,6 +10,7 @@ const Card = styled.div`
     background-color: ${(props) => props.theme.colors.handheldBackground};
     box-shadow: 5px 5px ${(props) => props.theme.colors.handheldBackgroundSecondary};
     border-radius: 10px 10px 60px 10px;
+    margin-bottom: 1rem;
 `
 
 export default Card

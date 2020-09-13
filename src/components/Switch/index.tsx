@@ -21,12 +21,12 @@ const Switch: React.FC<SwitchProps> = (props: SwitchProps) => {
           }
         }}
       >
-        {labelLeft && <span>{labelLeft} </span>}
+        {labelLeft && <S.Label>{labelLeft}</S.Label>}
         <S.Switcher
           switched={value}
           disabled={disabled}
         />
-        {labelRight && <span> {labelRight}</span>}
+        {labelRight && <S.Label>{labelRight}</S.Label>}
       </S.Container>
     </div>
   )

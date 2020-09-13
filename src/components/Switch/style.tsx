@@ -41,3 +41,7 @@ export const Switcher = styled.div<SwitcherProps>`
     `}
   }
 }`
+
+export const Label = styled.span`
+    color: ${(props) => props.theme.colors.text}
+`
